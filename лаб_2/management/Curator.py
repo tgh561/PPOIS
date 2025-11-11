@@ -1,6 +1,9 @@
-from typing import List
-from Employee import Employee
-from entities.Exhibition import Exhibition
+from __future__ import annotations
+from typing import List, TYPE_CHECKING
+
+from Employee import Employee 
+if TYPE_CHECKING:
+    from entities.Exhibition import Exhibition
 
 class Curator(Employee):
 

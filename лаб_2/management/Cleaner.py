@@ -1,5 +1,10 @@
-from Employee import Employee
-from entities.GalleryHall import GalleryHall
+from __future__ import annotations
+from typing import TYPE_CHECKING
+
+from Employee import Employee  
+if TYPE_CHECKING:
+    from entities.GalleryHall import GalleryHall
+
 class Cleaner(Employee):
 
     def __init__(self, name: str, position: str = "Cleaner", salary: float = 0.0):

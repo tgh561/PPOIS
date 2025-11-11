@@ -1,6 +1,12 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
+
 from Employee import Employee
-from entities.Painting import Painting
-from entities.RestorationRecord import RestorationRecord
+
+if TYPE_CHECKING:
+    from entities.Painting import Painting
+    from entities.RestorationRecord import RestorationRecord
+
 
 class Restorer(Employee):
 

@@ -1,5 +1,11 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
+
 from Employee import Employee
-from entities.Exhibition import Exhibition
+
+if TYPE_CHECKING:
+    from entities.Exhibition import Exhibition
+
 class Guide(Employee):
 
     def __init__(self, name: str, position: str = "Guide", salary: float = 0.0):

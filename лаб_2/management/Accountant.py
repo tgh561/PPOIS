@@ -1,5 +1,10 @@
-from .Employee import Employee
-from entities.Transaction import Transaction
+from __future__ import annotations
+from typing import TYPE_CHECKING
+
+from Employee import Employee  
+
+if TYPE_CHECKING:
+    from entities.Transaction import Transaction
 
 class Accountant(Employee):
     def __init__(self, name: str, position: str = "Accountant", salary: float = 0.0):

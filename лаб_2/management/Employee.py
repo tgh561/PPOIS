@@ -1,5 +1,9 @@
-from typing import Optional
-from entities.GalleryHall import GalleryHall
+from __future__ import annotations
+from typing import Optional, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from entities.GalleryHall import GalleryHall
+
 class Employee:
 
     def __init__(self, name: str, position: str, salary: float = 0.0, employee_id: str = None):

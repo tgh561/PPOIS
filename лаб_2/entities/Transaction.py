@@ -1,7 +1,9 @@
 from __future__ import annotations
-from typing import Optional
-from .Payment import Payment
-from management.Accountant import Accountant
+from typing import Optional, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from Payment import Payment
+    from management.Accountant import Accountant
 
 
 class Transaction:

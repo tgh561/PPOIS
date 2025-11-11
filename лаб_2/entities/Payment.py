@@ -1,7 +1,9 @@
 from __future__ import annotations
-from typing import Optional
-from .Visitor import Visitor
-from management.Cashier import Cashier
+from typing import Optional, TYPE_CHECKING
+
+from Visitor import Visitor 
+if TYPE_CHECKING:
+    from management.Cashier import Cashier
 
 
 class Payment:
