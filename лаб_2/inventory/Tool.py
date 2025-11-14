@@ -1,8 +1,9 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from ..management.Technician import Technician
-    from ..exceptions.EmployeeNotAssigned import EmployeeNotAssigned
+    from management.Technician import Technician
+    from exceptions.EmployeeNotAssigned import EmployeeNotAssigned
 
 class Tool:
     def __init__(self, name: str, technician: Technician = None):

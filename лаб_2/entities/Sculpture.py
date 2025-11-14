@@ -1,6 +1,10 @@
-from Exhibit import Exhibit
-from Artist import Artist
-from GalleryHall import GalleryHall
+from entities.Exhibit import Exhibit
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from entities.Artist import Artist
+    from entities.GalleryHall import GalleryHall
+
 class Sculpture(Exhibit):
     def __init__(self, title: str, artist: "Artist", material: str = "", weight: float = 0.0, height: float = 0.0):
         super().__init__(title, artist)

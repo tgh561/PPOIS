@@ -1,7 +1,8 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from ..entities.Gallery import Gallery
+    from entities.Gallery import Gallery
 
 class Loan:
     def __init__(self, loan_id: str, amount: float, interest: float, gallery: Gallery):

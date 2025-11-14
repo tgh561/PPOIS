@@ -1,10 +1,11 @@
 from __future__ import annotations
 from typing import List, TYPE_CHECKING
 from .Event import Event
+
 if TYPE_CHECKING:
-    from ..entities.Painting import Painting
-    from .Bid import Bid
-    from ..entities.GalleryHall import GalleryHall
+    from entities.Painting import Painting
+    from events.Bid import Bid
+    from entities.GalleryHall import GalleryHall
 
 class Auction(Event):
     def __init__(self, name: str, date: str, location: GalleryHall):

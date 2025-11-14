@@ -1,8 +1,8 @@
-from typing import Optional, TYPE_CHECKING
+from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from Exhibition import Exhibition
-    from Visitor import Visitor
+    from entities.Exhibition import Exhibition
+    from entities.Visitor import Visitor
 
 class Ticket:
     def __init__(self, ticket_id: str, exhibition: "Exhibition", price: float, is_used: bool = False):

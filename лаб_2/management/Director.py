@@ -1,7 +1,7 @@
 from typing import List
-from Employee import Employee
-from Employee import Employee
-from Curator import Curator
+
+from management.Employee import Employee
+from management.Curator import Curator
 
 class Director(Employee):
     def __init__(self, name: str, position: str = "Director", salary: float = 0.0):

@@ -1,4 +1,7 @@
-from Visitor import Visitor
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from entities.Visitor import Visitor
 
 class MemberCard:
     def __init__(self, card_id: str, visitor: "Visitor", discount_rate: float = 0.1, points: int = 0):

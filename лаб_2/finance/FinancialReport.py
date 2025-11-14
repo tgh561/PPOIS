@@ -1,7 +1,8 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from ..management.Director import Director
+    from management.Director import Director
 
 class FinancialReport:
     def __init__(self, period: str, data: str):

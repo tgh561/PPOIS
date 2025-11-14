@@ -1,8 +1,8 @@
 from __future__ import annotations
 from typing import List, TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from .InventoryItem import InventoryItem
-    from ..exceptions.StorageOverflow import StorageOverflow
+    from inventory.InventoryItem import InventoryItem
 
 class Supplier:
     def __init__(self, name: str):

@@ -1,8 +1,9 @@
 from __future__ import annotations
 from typing import Optional, TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from ..entities.Visitor import Visitor
-    from ..entities.Gallery import Gallery
+    from entities.Visitor import Visitor
+    from entities.Gallery import Gallery
 
 class Invoice:
     def __init__(self, invoice_id: str, amount: float, visitor: Visitor, gallery: Gallery, date: str, status: str = "unpaid"):

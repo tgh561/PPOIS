@@ -1,7 +1,8 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from ..entities.Visitor import Visitor
+    from entities.Visitor import Visitor
 
 class CreditCard:
     def __init__(self, number: str, holder: Visitor, limit: float, password: str):

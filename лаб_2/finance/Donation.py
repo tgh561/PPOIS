@@ -1,8 +1,9 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from ..entities.Visitor import Visitor
-    from ..entities.Exhibit import Exhibit
+    from entities.Visitor import Visitor
+    from entities.Exhibit import Exhibit
 
 class Donation:
     def __init__(self, donation_id: str, amount: float, donor: Visitor, exhibit: Exhibit = None):

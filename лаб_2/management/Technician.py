@@ -1,4 +1,4 @@
-from Employee import Employee
+from management.Employee import Employee
 
 class Technician(Employee):
 

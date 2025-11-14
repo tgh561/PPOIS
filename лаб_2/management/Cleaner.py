@@ -1,7 +1,8 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
 
-from Employee import Employee  
+from management.Employee import Employee
+
 if TYPE_CHECKING:
     from entities.GalleryHall import GalleryHall
 

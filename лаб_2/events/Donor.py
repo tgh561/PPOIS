@@ -1,7 +1,8 @@
 from __future__ import annotations
 from typing import List, TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from ..entities.Exhibit import Exhibit
+    from entities.Exhibit import Exhibit
 
 class Donor:
     def __init__(self, name: str):

@@ -1,7 +1,8 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from .Event import Event
+    from events.Event import Event
 
 class Sponsor:
     def __init__(self, name: str, contribution: float, event: Event):

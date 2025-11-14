@@ -1,7 +1,8 @@
 from __future__ import annotations
 from typing import List, TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from ..entities.Painting import Painting
+    from entities.Painting import Painting
 
 class Collector:
     def __init__(self, name: str):

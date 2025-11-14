@@ -1,9 +1,9 @@
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from Painting import Painting
-    from management.Employee import Employee 
-    
+    from entities.Painting import Painting
+    from management.Employee import Employee
+
 class RestorationRecord:
     def __init__(self, painting: "Painting", restorer: "Employee", date: str, description: str = "", cost: float = 0.0):
         self.painting = painting

@@ -1,10 +1,10 @@
 from typing import List, Optional, TYPE_CHECKING
+from entities.Ticket import Ticket
 
 if TYPE_CHECKING:
-    from MemberCard import MemberCard
-    from Exhibition import Exhibition
-    from Ticket import Ticket
-    from Payment import Payment
+    from entities.MemberCard import MemberCard
+    from entities.Exhibition import Exhibition
+    from entities.Payment import Payment
 
 class Visitor:
     def __init__(self, name: str, email: str = "", phone: str = "", member_card: "MemberCard" = None):

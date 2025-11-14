@@ -1,7 +1,8 @@
 from __future__ import annotations
 from typing import Optional, TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from ..management.Employee import Employee
+    from management.Employee import Employee
 
 class Expense:
     def __init__(self, expense_id: str, amount: float, description: str, employee: Employee):

@@ -1,8 +1,9 @@
 from typing import Optional, TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from Artist import Artist
-    from GalleryHall import GalleryHall
+    from entities.Artist import Artist
+    from entities.GalleryHall import GalleryHall
+
 
 class Exhibit:
     def __init__(self, title: str, artist: "Artist", accession_id: str = "", description: str = ""):

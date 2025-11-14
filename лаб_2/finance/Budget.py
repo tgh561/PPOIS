@@ -1,9 +1,10 @@
 from __future__ import annotations
 from typing import List, TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from .Expense import Expense
-    from ..entities.Gallery import Gallery
-    from ..exceptions.BudgetExceeded import BudgetExceeded
+    from finance.Expense import Expense
+    from entities.Gallery import Gallery
+    from exceptions.BudgetExceeded import BudgetExceeded
 
 class Budget:
     def __init__(self, year: int, total: float, gallery: Gallery):

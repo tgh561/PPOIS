@@ -1,8 +1,9 @@
 from typing import List, TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from Exhibit import Exhibit
+    from entities.Exhibit import Exhibit
     from management.Employee import Employee
+
 
 class Exhibition:
     def __init__(self, name: str, curator: "Employee", start_date: str = "", end_date: str = "", ticket_price: float = 0.0):

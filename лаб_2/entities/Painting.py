@@ -1,9 +1,10 @@
-from typing import List, Optional, TYPE_CHECKING
-from Exhibit import Exhibit
+from entities.Exhibit import Exhibit
+from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from RestorationRecord import RestorationRecord
-    from Artist import Artist
+    from entities.RestorationRecord import RestorationRecord
+    from entities.Artist import Artist
+
 
 class Painting(Exhibit):
     def __init__(self, title: str, artist: "Artist", price: float = 0.0, year: int = None,

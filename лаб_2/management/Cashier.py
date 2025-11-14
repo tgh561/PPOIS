@@ -1,8 +1,10 @@
-from Employee import Employee
 from typing import TYPE_CHECKING
+
+from management.Employee import Employee
 
 if TYPE_CHECKING:
     from entities.Payment import Payment
+
 
 class Cashier(Employee):
     def __init__(self, name: str, position: str = "Cashier", salary: float = 0.0):

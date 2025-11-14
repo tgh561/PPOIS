@@ -1,13 +1,12 @@
-from __future__ import annotations
-from typing import Optional, TYPE_CHECKING
+from typing import TYPE_CHECKING
+from entities.Payment import Payment
 
 if TYPE_CHECKING:
-    from Payment import Payment
     from management.Accountant import Accountant
 
 
 class Transaction:
-    def __init__(self, transaction_id: str, payment: Payment, accountant: Accountant, timestamp: str, description: str = "", amount: float = 0.0):
+    def __init__(self, transaction_id: str, payment: Payment, accountant: "Accountant", timestamp: str, description: str = "", amount: float = 0.0):
         self.transaction_id = transaction_id
         self.payment = payment
         self.accountant = accountant

@@ -1,7 +1,8 @@
-from typing import List, Optional, TYPE_CHECKING
+from typing import List, Optional
+from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from Exhibit import Exhibit
+    from entities.Exhibit import Exhibit
 
 class GalleryHall:
     def __init__(self, name: str, capacity: int = 50, floor: int = 1):

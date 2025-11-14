@@ -1,8 +1,9 @@
 from typing import List, Optional, TYPE_CHECKING
+from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from ArtStyle import ArtStyle
-    from Painting import Painting
+    from entities.ArtStyle import ArtStyle
+    from entities.Painting import Painting
 
 class Artist:
     def __init__(self, name: str, birth_year: int, death_year: Optional[int] = None, bio: str = ""):

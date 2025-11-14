@@ -1,10 +1,12 @@
 from __future__ import annotations
 from typing import List, TYPE_CHECKING
 from .Event import Event
+
 if TYPE_CHECKING:
-    from ..management.Guide import Guide
-    from ..entities.Exhibit import Exhibit
-    from ..entities.GalleryHall import GalleryHall
+    from management.Guide import Guide
+    from entities.Exhibit import Exhibit
+    from entities.GalleryHall import GalleryHall
+
 class Tour(Event):
     def __init__(self, name: str, date: str, location: GalleryHall, guide: Guide):
         super().__init__(name, date, location)

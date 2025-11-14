@@ -1,8 +1,9 @@
 from __future__ import annotations
 from typing import List, TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from ..entities.GalleryHall import GalleryHall
-    from ..entities.Visitor import Visitor
+    from entities.GalleryHall import GalleryHall
+    from entities.Visitor import Visitor
 
 class Event:
     def __init__(self, name: str, date: str, location: GalleryHall):

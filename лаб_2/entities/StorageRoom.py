@@ -1,7 +1,7 @@
 from typing import List, TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from Exhibit import Exhibit
+    from entities.Exhibit import Exhibit
 
 class StorageRoom:
     def __init__(self, capacity: int = 100, climate_control: bool = True):

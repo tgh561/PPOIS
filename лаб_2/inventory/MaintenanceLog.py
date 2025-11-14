@@ -1,8 +1,9 @@
 from __future__ import annotations
 from typing import List, TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from ..management.Technician import Technician
-    from ..exceptions.InvalidDate import InvalidDate
+    from management.Technician import Technician
+    from exceptions.InvalidDate import InvalidDate
 
 class MaintenanceLog:
     def __init__(self, date: str, technician: Technician):

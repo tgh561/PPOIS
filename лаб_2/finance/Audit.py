@@ -1,7 +1,8 @@
 from __future__ import annotations
 from typing import List, TYPE_CHECKING
+
 if TYPE_CHECKING:
-    from ..management.Accountant import Accountant
+    from management.Accountant import Accountant
 
 class Audit:
     def __init__(self, audit_id: str, accountant: Accountant):

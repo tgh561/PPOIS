@@ -1,13 +1,16 @@
 from typing import List, TYPE_CHECKING
 from typing import Optional
+from entities.Painting import Painting
+
 
 if TYPE_CHECKING:
-    from Address import Address
-    from GalleryBranch import GalleryBranch
-    from GalleryHall import GalleryHall
-    from Exhibit import Exhibit
-    from Painting import Painting
+    from entities.Exhibit import Exhibit
+    from entities.Painting import Painting
+    from entities.Address import Address
+    from entities.GalleryBranch import GalleryBranch
+    from entities.GalleryHall import GalleryHall
     from management.Employee import Employee
+
 
 class Gallery:
     def __init__(self, name: str, address: "Address"):
