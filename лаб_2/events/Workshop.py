@@ -1,10 +1,9 @@
 from __future__ import annotations
 from typing import List, TYPE_CHECKING
+from .Event import Event
 if TYPE_CHECKING:
-    from .Event import Event
     from ..management.Employee import Employee
     from ..entities.GalleryHall import GalleryHall
-
 class Workshop(Event):
     def __init__(self, name: str, date: str, location: GalleryHall, instructor: Employee):
         super().__init__(name, date, location)

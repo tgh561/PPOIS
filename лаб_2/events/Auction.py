@@ -1,6 +1,6 @@
 from __future__ import annotations
 from typing import List, TYPE_CHECKING
-from .Event import Event  # Явный импорт для выполнения
+from .Event import Event
 if TYPE_CHECKING:
     from ..entities.Painting import Painting
     from .Bid import Bid
