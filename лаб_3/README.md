@@ -176,7 +176,6 @@ VisaRequiredException 2 0 →
 
 ---
 
-Классы: 48
 
 Поля: 542
 
